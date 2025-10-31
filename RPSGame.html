@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+    
+    <link rel="stylesheet" href="RPSstyle.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>Rock Paper Scissor</h1>
+    </header>    
+    <div class="container">
+      <button 
+        class="moveBtn js-rockBtnMove"
+        id="rock"
+      ><img class="choiceRPSimage" src="RPSimage/rock-emoji.png" alt="Rock"/>
+      </button>
+      <button
+        class="moveBtn js-paperBtnMove"
+        id="paper"
+      ><img class="choiceRPSimage"  src="RPSimage/paper-emoji.png" alt="Paper"/>
+      </button>
+      <button 
+        class="moveBtn js-scissorBtnMove"
+        id="Scissor"
+      ><img class="choiceRPSimage" src="RPSimage/scissors-emoji.png" alt="Scissor"/>
+      </button>
+      <button
+        id="resete"
+        class="resetBtn"
+        onclick="
+            Score=0;
+            reset();
+            "
+      >
+        Reset Score
+      </button>
+      <button
+        id="AutoPlay"
+        class="AutoPlayBtn js-autoPlayBtnMove"
+      >
+      Auto Play
+    </button>
+      
+    </div>
+
+        <div class="PicContainer">
+          <h1 class="webScore">Play A Game</h1>
+          <div class="picWrapper">
+            <div  class="Pic">
+              <h2>Player</h2>
+              <p id="plyPick">####</p>
+              <img id="PlayerPickImage" src="RPSimage/aldenDila.jpg" >
+            </div>
+            <div class="Pic">
+              <h2>Computer</h2>
+              <p id="compPick">####</p>
+              <img id="CompPickImage" src="RPSimage/aldenDilat.jpg" >
+            </div>
+          </div>
+        </div>
+        <script src="RPSjs.js"></script>
+    </body>
+</html>
